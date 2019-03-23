@@ -1,0 +1,28 @@
+{
+  "defaultSeverity": "warning",
+  "extends": [
+    "tslint:latest",
+    "tslint-react",
+    "tslint-react-recommended",
+    "tslint-config-prettier",
+    "tslint-config-airbnb"],
+  "jsRules": {},
+  "rules": {
+    "import-name": [false],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-pascal-case"],
+    "no-implicit-dependencies": false,
+    "jsx-boolean-value": ["always", { "never": ["exact"] }],
+    "jsx-no-lambda": ["always", { "never": ["onClick"] }],
+    "object-literal-sort-keys": false,
+    "prettier": [true, "./prettierrc.json"],
+    "no-shadowed-variable": false,
+    "interface-name": false,
+    "member-access": [false],
+    "no-submodule-imports": false
+  },
+  "rulesDirectory": ["tslint-plugin-prettier"]
+}
